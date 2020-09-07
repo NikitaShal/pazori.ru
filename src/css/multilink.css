@@ -31,12 +31,12 @@ body {
 .brand-line {
   position: relative;
   height: 3px;
-  /*margin-top: -36px;*/
   width: 100%;
   margin-top: -36px;
   margin-left: 15px;
   background: rgb(126,255,177);
   background: linear-gradient(90deg, rgba(126,255,177,1) 0%, rgba(126,237,255,1) 25%, rgba(167,127,255,1) 75%, rgba(255,126,249,1) 100%);
+  margin-bottom: 33px;
 }
 
 .description {
@@ -49,9 +49,12 @@ body {
 }
 
 .footer {
-  height: 300px;
+  height: 200px;
   background: rgb(121,255,214);
   background: linear-gradient(141deg, rgba(121,255,214,1) 0%, rgba(112,207,255,1) 49%, rgba(168,142,242,1) 100%);
+}
+
+.catalog {
 }
 
 /*@media only screen and (max-width: 480px) {
