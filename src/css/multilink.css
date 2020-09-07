@@ -1,0 +1,52 @@
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  font: 112.5%/1.45em georgia, serif, sans-serif;
+  font-family: "GillSans", sans-serif;
+  font-weight: normal;
+  box-sizing: border-box;
+  overflow-y: scroll;
+}
+body {
+  margin: 45px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: hsla(0, 0%, 0%, 0.8);
+  font-family: "GillSans", sans-serif;
+  font-weight: normal;
+  word-wrap: break-word;
+  font-kerning: normal;
+  -moz-font-feature-settings: "kern", "liga", "clig", "calt";
+  -ms-font-feature-settings: "kern", "liga", "clig", "calt";
+  -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
+  font-feature-settings: "kern", "liga", "clig", "calt";
+}
+
+.header {
+  margin-right: 25px;
+}
+
+.brand-line {
+  position: relative;
+  height: 3px;
+  /*margin-top: -36px;*/
+  width: 100%;
+  margin-top: -36px;
+  margin-left: 15px;
+  background: rgb(126,255,177);
+  background: linear-gradient(90deg, rgba(126,255,177,1) 0%, rgba(126,237,255,1) 25%, rgba(167,127,255,1) 75%, rgba(255,126,249,1) 100%);
+}
+
+.description {
+  float: right;
+  right: -10px;
+  position: relative;
+  margin-top: -60px;
+  font-family: "GillSans-Light", sans-serif;
+}
+
+@media only screen and (max-width: 480px) {
+  html {
+    font-size: 100%;
+  }
+}
