@@ -8,7 +8,7 @@ html {
   overflow-y: scroll;
 }
 body {
-  margin: 45px;
+  margin: 25px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: hsla(0, 0%, 0%, 0.8);
@@ -43,10 +43,11 @@ body {
   position: relative;
   margin-top: -60px;
   font-family: "GillSans-Light", sans-serif;
+  font-size: 14px;
 }
 
-@media only screen and (max-width: 480px) {
+/*@media only screen and (max-width: 480px) {
   html {
     font-size: 100%;
   }
-}
+}*/
