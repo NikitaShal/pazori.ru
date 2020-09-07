@@ -43,7 +43,7 @@ body {
   position: relative;
   margin-top: -60px;
   font-family: "GillSans-Light", sans-serif;
-  font-size: 3.5vw;
+  font-size: 1.9vmax;
 }
 
 /*@media only screen and (max-width: 480px) {
