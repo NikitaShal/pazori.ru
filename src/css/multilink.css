@@ -39,11 +39,11 @@ body {
 
 .description {
   float: right;
-  right: -10px;
+  right: -14px;
   position: relative;
   margin-top: -60px;
   font-family: "GillSans-Light", sans-serif;
-  font-size: 14px;
+  font-size: 13.5px;
 }
 
 /*@media only screen and (max-width: 480px) {
