@@ -1,14 +1,13 @@
 html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-  font: 112.5%/1.45em georgia, serif, sans-serif;
+  font: 112.5%/1.45em georgia;
   font-family: "GillSans", sans-serif;
   font-weight: normal;
   box-sizing: border-box;
   overflow-y: scroll;
 }
 body {
-  margin: 25px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: hsla(0, 0%, 0%, 0.8);
@@ -24,6 +23,9 @@ body {
 
 .header {
   margin-right: 25px;
+  margin-top: 18px;
+  margin-left: 18px;
+  margin-right: 30px;
 }
 
 .brand-line {
@@ -43,7 +45,13 @@ body {
   position: relative;
   margin-top: -60px;
   font-family: "GillSans-Light", sans-serif;
-  font-size: 1.9vmax;
+  font-size: 1.8vmax;
+}
+
+.footer {
+  height: 300px;
+  background: rgb(121,255,214);
+  background: linear-gradient(141deg, rgba(121,255,214,1) 0%, rgba(112,207,255,1) 49%, rgba(168,142,242,1) 100%);
 }
 
 /*@media only screen and (max-width: 480px) {
