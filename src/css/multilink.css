@@ -49,13 +49,27 @@ body {
 }
 
 .footer {
+  margin-top: 25px;
   height: 200px;
   background: rgb(121,255,214);
   background: linear-gradient(141deg, rgba(121,255,214,1) 0%, rgba(112,207,255,1) 49%, rgba(168,142,242,1) 100%);
 }
 
-.catalog {
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(0px, 0.45fr));
+  grid-gap: 0px;
+  justify-content: center;
+    justify-content: center;
+  align-content: center;
 }
+
+.item {
+  width: 160px;
+  align-self: center;
+  justify-self: center;
+}
+
 
 /*@media only screen and (max-width: 480px) {
   html {

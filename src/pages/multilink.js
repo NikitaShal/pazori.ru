@@ -1,20 +1,11 @@
 import React from "react"
 import { Link } from "gatsby"
-import SwiperCore, { Pagination } from 'swiper';
-import { Swiper, SwiperSlide } from 'swiper/react';
 import Img from 'gatsby-image';
 
 import "../css/multilink.css"
 
-import 'swiper/swiper.scss';
-import 'swiper/components/pagination/pagination.scss';
-
 import SEO from "../components/seo"
 import logo from '../images/logo-pazori.svg'
-import ProductWhite from '../images/white.png'
-import ProductBlack from '../images/black.png'
-
-SwiperCore.use([Pagination]);
 
 const ML = props => (
 	<div class="container">
@@ -31,20 +22,15 @@ const ML = props => (
 		    <div class="brand-line"></div>
 			</div>
 
-			<div class="catalog">
-		    <Swiper
-		      spaceBetween={10}
-		      slidesPerView={2}
-      		pagination={{ clickable: true }}
-		    >
-		      <SwiperSlide style={{marginLeft: `20px`}}><Img fluid={props.data.productOne.childImageSharp.fluid}
-		      									alt="Худи с брендингом pazori" /></SwiperSlide>
-		      <SwiperSlide><Img fluid={props.data.productTwo.childImageSharp.fluid}
-		      									alt="Худи с брендингом pazori" /></SwiperSlide>
-		      <SwiperSlide><img src={ProductWhite} /></SwiperSlide>
-		      <SwiperSlide><img src={ProductBlack} /></SwiperSlide>
-		    </Swiper>
-		    <div class="swiper-pagination"></div>
+			<div class="grid">
+
+					<div class="item">
+						<Img fluid={props.data.productOne.childImageSharp.fluid} />
+					</div>
+					<div class="item">
+						<Img class="" fluid={props.data.productTwo.childImageSharp.fluid} />
+					</div>
+
 			</div>
 
 			<div class="footer">
