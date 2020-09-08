@@ -39,7 +39,8 @@ const ML = props => (
 		    >
 		      <SwiperSlide style={{marginLeft: `20px`}}><Img fluid={props.data.productOne.childImageSharp.fluid}
 		      									alt="Худи с брендингом pazori" /></SwiperSlide>
-		      <SwiperSlide><img src={ProductBlack} /></SwiperSlide>
+		      <SwiperSlide><Img fluid={props.data.productTwo.childImageSharp.fluid}
+		      									alt="Худи с брендингом pazori" /></SwiperSlide>
 		      <SwiperSlide><img src={ProductWhite} /></SwiperSlide>
 		      <SwiperSlide><img src={ProductBlack} /></SwiperSlide>
 		    </Swiper>
@@ -58,7 +59,14 @@ export const pageQuery = graphql`
   query {
     productOne: file(relativePath: { eq: "white.png" }) {
       childImageSharp {
-        fluid(maxWidth: 1000, quality: 100) {
+        fluid(maxWidth: 300, maxHeight: 330, quality: 100) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    productTwo: file(relativePath: { eq: "black.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 300, maxHeight: 330, quality: 100) {
           ...GatsbyImageSharpFluid
         }
       }
