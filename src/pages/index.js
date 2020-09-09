@@ -38,7 +38,7 @@ const IndexPage = props => (
 
 				</div>
 
-				<button class="allcatalog_button"><span>перейти в каталог</span></button>
+				<button class="allcatalog_button"></button>
 			</div>
 
 			<div class="about-company-text">
