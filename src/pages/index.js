@@ -65,7 +65,7 @@ const IndexPage = props => (
 
 
 			<div class="footer">
-					<a href="tel:8911348640"><button class="call_button">ЗВОНОК</button></a>
+					<a href="tel:89113458640"><button class="call_button">ЗВОНОК</button></a>
 					<a href = "mailto: info@pazori.ru"><button class="mail_button">ПОЧТА</button></a>
 
 					{/*<button class="merchbutton">МЕРЧ</button>
