@@ -24,10 +24,11 @@ const IndexPage = props => (
 	    {/* <Img fluid={props.data.imageOne.childImageSharp.fluid} /> */}
 
 	    <div class="header">
-	    	<div style={{ maxWidth: `100px` }}>
+	    	<div style={{ maxWidth: `140px` }}>
 		      <img src={logo} />
 		    </div>
-		    <p class="brand-description">одежда и аксессуары из Мурманска</p>
+		    <p class="brand-description">одежда и <br/> 
+		    аксессуары из <br/> Мурманска</p>
 		    <div class="brand-line"></div>
 			</div>
 
