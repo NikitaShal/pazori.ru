@@ -9,6 +9,11 @@ import SEO from "../components/seo"
 import "../css/multilink.css"
 
 import logo from '../images/logo-pazori.svg'
+import vk from '../images/vk.svg'
+import inst from '../images/inst.svg'
+import wa from '../images/whatsapp.svg'
+import tg from '../images/telegram.svg'
+import mir from '../images/madeinrussia.svg'
 
 const IndexPage = props => (
   <Layout>
@@ -38,11 +43,24 @@ const IndexPage = props => (
 
 				</div>
 
-				<button class="allcatalog_button"></button>
+				<a href="https://vk.com/market-196667887" target="_blank"><button class="allcatalog_button"></button></a>
 			</div>
 
 			<div class="about-company-text">
-				Мы - самое северное производство одежды, стремимся делать качественно и даём гарантию на всю одежду, также шьём для предприятий и на заказ
+				Мы - самое северное швейное производство. <br/>
+				Отвечаем за качество и даём гарантию на всю продукцию. <br/>
+				Иполнили уже более 50 заказов для компаний по Мурманску и области. <br/>
+				Можем с нуля разработать мерч(брендированная одежда компании) с индивидуальным дизайном. 
+			</div>
+
+			<div class="social-buttons">
+				<p>Мы в социальных сетях:</p>
+				<div class="grid" style={{ width: `80%`, margin: `18px auto 0px auto` }}>
+					<div class="item" style={{ maxWidth: `40px` }}><a href="https://vk.com/pazori_north" target="_blank"><img src={vk} /></a></div>
+					<div class="item" style={{ maxWidth: `40px` }}><a href="https://www.instagram.com/pazori_north/" target="_blank"><img src={inst} /></a></div>
+					<div class="item" style={{ maxWidth: `40px` }}><a href="https://wa.me/79113458640" target="_blank"><img src={wa} /></a></div>
+					<div class="item" style={{ maxWidth: `40px` }}><a href="https://t.me/nikitashal" target="_blank"><img src={tg} /></a></div>
+				</div>
 			</div>
 
 
