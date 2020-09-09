@@ -65,11 +65,15 @@ const IndexPage = props => (
 
 
 			<div class="footer">
-					<button class="optombutton">ЗВОНОК</button>
-					<button class="optombutton">ПОЧТА</button>
+					<a href="tel:8911348640"><button class="call_button">ЗВОНОК</button></a>
+					<a href = "mailto: info@pazori.ru"><button class="mail_button">ПОЧТА</button></a>
 
-					<button class="merchbutton">МЕРЧ</button>
-					<button class="optombutton">ОПТОМ</button>
+					{/*<button class="merchbutton">МЕРЧ</button>
+					<button class="optombutton">ОПТОМ</button>*/}
+
+					<div class="madeinrussia">
+						<img src={mir} />
+					</div>
 			</div>
     </div>
   </Layout>

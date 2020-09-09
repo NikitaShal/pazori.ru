@@ -27,8 +27,9 @@
 
 .footer {
   margin-top: -60px;
+  padding-top: 80px;
   z-index: 0;
-  height: 200px;
+  padding-bottom: 30px;
   background: rgb(121,255,214);
   background: linear-gradient(141deg, rgba(121,255,214,1) 0%, rgba(112,207,255,1) 49%, rgba(168,142,242,1) 100%);
 }
@@ -127,6 +128,56 @@
   font-family: "GillSans", sans-serif;
   text-align: center;
   margin: 0 auto 0 auto;
+}
+
+.call_button {
+  /*width: 88%;*/
+  font-family: 'GillSans-SemiBold', sans-serif;
+  font-size: 1em;
+  padding: 10px 30px;
+  -webkit-appearance: none;
+  appearance: none;
+  border-radius: 7px;
+  cursor: pointer;
+  position: relative;
+  transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
+  box-shadow: 0 2px 25px rgba(0, 0, 0, 0.14);
+  text-transform: uppercase;
+  display: block;
+  margin: 0px auto 0px auto;
+  border: none;
+  border: solid 3px white;
+  background: rgba(255, 255, 255,0);
+  color: white;
+}
+
+.mail_button {
+  /*width: 88%;*/
+  font-family: 'GillSans-SemiBold', sans-serif;
+  font-size: 1em;
+  padding: 10px 37px;
+  -webkit-appearance: none;
+  appearance: none;
+  border-radius: 7px;
+  cursor: pointer;
+  position: relative;
+  transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
+  box-shadow: 0 2px 25px rgba(0, 0, 0, 0.14);
+  text-transform: uppercase;
+  display: block;
+  margin: 15px auto 0px auto;
+  border: none;
+  border: solid 3px white;
+  background: rgba(255, 255, 255,0);
+  color: white;
+}
+
+.madeinrussia {
+  position: relative;
+  width: 50px;
+  float: right;
+  bottom: -5px;
+  right: 5px;
 }
 
 @media only screen and (min-width: 480px) {
