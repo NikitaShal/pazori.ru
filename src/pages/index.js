@@ -24,7 +24,7 @@ const IndexPage = props => (
 	    {/* <Img fluid={props.data.imageOne.childImageSharp.fluid} /> */}
 
 	    <div class="header">
-	    	<div style={{ maxWidth: `140px` }}>
+	    	<div style={{ maxWidth: `160px` }}>
 		      <img src={logo} />
 		    </div>
 		    <p class="brand-description">одежда и <br/> 
@@ -55,7 +55,7 @@ const IndexPage = props => (
 			</div>
 
 			<div class="social-buttons">
-				<p>Мы в социальных сетях:</p>
+				<p>Напиши нам:</p>
 				<div class="grid" style={{ width: `80%`, margin: `18px auto 0px auto` }}>
 					<div class="item" style={{ maxWidth: `40px` }}><a href="https://vk.com/pazori_north" target="_blank"><img src={vk} /></a></div>
 					<div class="item" style={{ maxWidth: `40px` }}><a href="https://www.instagram.com/pazori_north/" target="_blank"><img src={inst} /></a></div>
