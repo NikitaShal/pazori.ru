@@ -22,27 +22,36 @@ const IndexPage = props => (
 	    	<div style={{ maxWidth: `100px` }}>
 		      <img src={logo} />
 		    </div>
-		    <p class="description">одежда и аксессуары из Мурманска</p>
+		    <p class="brand-description">одежда и аксессуары из Мурманска</p>
 		    <div class="brand-line"></div>
 			</div>
 
-			<div class="grid">
+			<div class="catalog">
+				<div class="grid">
 
-					<div class="item">
-						<Img fluid={props.data.productOne.childImageSharp.fluid} />
-					</div>
-					<div class="item">
-						<Img class="" fluid={props.data.productTwo.childImageSharp.fluid} />
-					</div>
+						<div class="item">
+							<Img fluid={props.data.productOne.childImageSharp.fluid} />
+						</div>
+						<div class="item">
+							<Img class="" fluid={props.data.productTwo.childImageSharp.fluid} />
+						</div>
 
+				</div>
+
+				<button class="allcatalog_button">перейти в каталог</button>
 			</div>
 
+			<div class="about-company-text">
+				Мы - самое северное производство одежды, стремимся делать качественно и даём гарантию на всю одежду, также шьём для предприятий и на заказ
+			</div>
+
+
 			<div class="footer">
-					<button class="optombuttom">ЗВОНОК</button>
-					<button class="optombuttom">ПОЧТА</button>
+					<button class="optombutton">ЗВОНОК</button>
+					<button class="optombutton">ПОЧТА</button>
 
 					<button class="merchbutton">МЕРЧ</button>
-					<button class="optombuttom">ОПТОМ</button>
+					<button class="optombutton">ОПТОМ</button>
 			</div>
     </div>
   </Layout>
