@@ -48,14 +48,14 @@ const IndexPage = props => (
 			</div>
 
 			<div class="about-company-text">
-				Мы - самое северное швейное производство. <br/>
-				Отвечаем за качество и даём гарантию на всю продукцию. <br/>
-				Исполнили уже более 50 заказов для компаний по Мурманску и области. <br/>
+				Мы - самое северное швейное производство. 
+				Следим за качеством и даём гарантию на всю продукцию.
+				Исполнили уже более 50 заказов для компаний по Мурманску и области. 
 				Можем с нуля разработать мерч(брендированная одежда компании) с индивидуальным дизайном. 
 			</div>
 
 			<div class="social-buttons">
-				<p>Напиши нам:</p>
+				<p>Мы всегда рады новым знакомствам</p>
 				<div class="grid" style={{ width: `80%`, margin: `18px auto 0px auto` }}>
 					<div class="item" style={{ maxWidth: `40px` }}><a href="https://vk.com/pazori_north" target="_blank"><img src={vk} /></a></div>
 					<div class="item" style={{ maxWidth: `40px` }}><a href="https://www.instagram.com/pazori_north/" target="_blank"><img src={inst} /></a></div>

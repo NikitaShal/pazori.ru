@@ -103,8 +103,8 @@
 }
 
 .about-company-text {
-  width: 88%;
-  text-align: center;
+  width: 75%;
+  text-align: justify;
   display: block;
   margin: 45px auto 0px auto;
   position: relative;
@@ -115,17 +115,17 @@
 .social-buttons {
   position: relative;
   z-index: 1;
-  margin: 45px auto 0px auto;
+  margin: 45px auto 0 auto;
   box-shadow: 0 2px 25px rgba(0, 0, 0, 0.14);
   background-color: #fff;
   width: 85%;
-  padding-bottom: 15px;
+  padding-bottom: 18px;
   border-radius: 30px;
   display: block;
 }
 
 .social-buttons p {
-  padding-top: 10px;
+  padding-top: 18px;
   font-family: "GillSans", sans-serif;
   text-align: center;
   margin: 0 auto 0 auto;
