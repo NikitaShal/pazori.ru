@@ -83,16 +83,16 @@ export default IndexPage
 
 export const pageQuery = graphql`
   query {
-    productOne: file(relativePath: { eq: "white.png" }) {
+    productOne: file(relativePath: { eq: "white.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 300, maxHeight: 330, quality: 100) {
+        fluid(maxWidth: 300, maxHeight: 330, quality: 95) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    productTwo: file(relativePath: { eq: "black.png" }) {
+    productTwo: file(relativePath: { eq: "black.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 300, maxHeight: 330, quality: 100) {
+        fluid(maxWidth: 300, maxHeight: 330, quality: 95) {
           ...GatsbyImageSharpFluid
         }
       }
