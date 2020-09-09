@@ -55,7 +55,7 @@ const IndexPage = props => (
 			</div>
 
 			<div class="social-buttons">
-				<p>Мы всегда рады новым знакомствам</p>
+				<p></p>
 				<div class="grid" style={{ width: `80%`, margin: `18px auto 0px auto` }}>
 					<div class="item" style={{ maxWidth: `40px` }}><a href="https://vk.com/pazori_north" target="_blank"><img src={vk} /></a></div>
 					<div class="item" style={{ maxWidth: `40px` }}><a href="https://www.instagram.com/pazori_north/" target="_blank"><img src={inst} /></a></div>

@@ -78,13 +78,3 @@
   font-weight: normal;
   font-style: normal;
 }
-
-@font-face {
-    font-family: 'Edicia';
-    src: url('EdiciaThin.woff2') format('woff2'),
-        url('EdiciaThin.woff') format('woff'),
-        url('EdiciaThin.ttf') format('truetype');
-    font-weight: 100;
-    font-style: normal;
-}
-
