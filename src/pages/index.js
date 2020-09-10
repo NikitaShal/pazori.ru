@@ -55,7 +55,7 @@ const IndexPage = props => (
 			</div>
 
 			<div class="social-buttons">
-				<p></p>
+				<p>Для лайков/сотруничества/хейта:</p>
 				<div class="grid" style={{ width: `80%`, margin: `18px auto 0px auto` }}>
 					<div class="item" style={{ maxWidth: `40px` }}><a href="https://vk.com/pazori_north" target="_blank"><img src={vk} /></a></div>
 					<div class="item" style={{ maxWidth: `40px` }}><a href="https://www.instagram.com/pazori_north/" target="_blank"><img src={inst} /></a></div>
@@ -76,6 +76,10 @@ const IndexPage = props => (
 						<img src={mir} />
 					</div>
 			</div>
+
+			<div class="footerimg">
+				<Img fluid={props.data.hiddenimage.childImageSharp.fluid} />
+			</div>
     </div>
   </Layout>
 )
@@ -94,6 +98,13 @@ export const pageQuery = graphql`
     productTwo: file(relativePath: { eq: "black.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 300, maxHeight: 330, quality: 95) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    hiddenimage: file(relativePath: { eq: "vkHeader.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 673, maxHeight: 253, quality: 95) {
           ...GatsbyImageSharpFluid
         }
       }
