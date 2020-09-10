@@ -25,7 +25,7 @@ const IndexPage = props => (
 
 	    {/* <Img fluid={props.data.imageOne.childImageSharp.fluid} /> */}
 
-			{/* 
+{/*
 			<ThemeToggler>
         {({ theme, toggleTheme }) => (
           <label>
@@ -38,7 +38,8 @@ const IndexPage = props => (
           </label>
         )}
       </ThemeToggler>
-      */}
+*/}
+      <div class="kostyl">
 
 	    <div class="header">
 	    	<div  style={{ maxWidth: `160px` }}>
@@ -92,6 +93,8 @@ const IndexPage = props => (
 					<div class="madeinrussia">
 						<img src={mir} />
 					</div>
+			</div>
+
 			</div>
 
 			<div class="footerimg">

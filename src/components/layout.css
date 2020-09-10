@@ -7,7 +7,7 @@ html {
   overflow-y: scroll;
 }
 body {
-  --bg: white;
+  --bg: #fff;
   --invertLogo: invert(0);
 
   max-width: 500px;
@@ -24,6 +24,7 @@ body {
   font-feature-settings: "kern", "liga", "clig", "calt";
   padding-bottom: 200px;
   background-color: var(--bg);
+  z-index: 0;
 }
 body.dark {
   -webkit-font-smoothing: antialiased;
