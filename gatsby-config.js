@@ -3,6 +3,8 @@ module.exports = {
     title: `pázori.ru`,
     description: `Одежда и аксессуары из Мурманска`,
     author: `@nikitashal`,
+    url: "https://www.pazori.ru",
+    image: "/images/gatsby-icon.png",
   },
   plugins: [
     `gatsby-plugin-sass`,
@@ -19,8 +21,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `pazori.ru`,
+        short_name: `pazori`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,
