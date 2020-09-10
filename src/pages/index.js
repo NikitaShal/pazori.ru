@@ -1,6 +1,8 @@
 import React from "react"
 import { Link } from "gatsby"
 
+import { ThemeToggler } from 'gatsby-plugin-dark-mode'
+
 import Img from 'gatsby-image';
 
 import Layout from "../components/layout"
@@ -17,15 +19,28 @@ import mir from '../images/madeinrussia.svg'
 
 const IndexPage = props => (
   <Layout>
-	<div class="container" style={{ backgroundColor: `#fff` }}>
+	<div class="container">
 
 	    <SEO title="Привет" />
 
 	    {/* <Img fluid={props.data.imageOne.childImageSharp.fluid} /> */}
 
+			<ThemeToggler>
+        {({ theme, toggleTheme }) => (
+          <label>
+            <input
+              type="checkbox"
+              onChange={e => toggleTheme(e.target.checked ? 'dark' : 'light')}
+              checked={theme === 'dark'}
+            />{' '}
+            Dark mode
+          </label>
+        )}
+      </ThemeToggler>
+
 	    <div class="header">
-	    	<div style={{ maxWidth: `160px` }}>
-		      <img src={logo} />
+	    	<div  style={{ maxWidth: `160px` }}>
+		      <img class="logo" src={logo} />
 		    </div>
 		    <p class="brand-description">одежда и <br/> 
 		    аксессуары из <br/> Мурманска</p>
@@ -91,21 +106,21 @@ export const pageQuery = graphql`
     productOne: file(relativePath: { eq: "white.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 300, maxHeight: 330, quality: 95) {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_tracedSVG
         }
       }
     }
     productTwo: file(relativePath: { eq: "black.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 300, maxHeight: 330, quality: 95) {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_tracedSVG
         }
       }
     }
     hiddenimage: file(relativePath: { eq: "vkHeader.png" }) {
       childImageSharp {
         fluid(maxWidth: 673, maxHeight: 253, quality: 95) {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_tracedSVG
         }
       }
     }

@@ -7,6 +7,9 @@ html {
   overflow-y: scroll;
 }
 body {
+  --bg: white;
+  --invertLogo: invert(0);
+
   max-width: 500px;
   margin: 0 auto;
   -webkit-font-smoothing: antialiased;
@@ -20,6 +23,16 @@ body {
   -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
   font-feature-settings: "kern", "liga", "clig", "calt";
   padding-bottom: 200px;
+  background-color: var(--bg);
+}
+body.dark {
+  -webkit-font-smoothing: antialiased;
+  --bg: black;
+  --invertLogo: invert(1);
+  --textNormal: rgba(255, 255, 255, 0.95);
+  --textTitle: white;
+  --textLink: yellow;
+  --hr: hsla(0, 0%, 100%, 0.2);
 }
 img {
   border-style: none;
