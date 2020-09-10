@@ -188,6 +188,7 @@
   z-index: -1;
   position: fixed;
   width: 100%;
+  max-width: 500px;
   bottom: 0;
 }
 
