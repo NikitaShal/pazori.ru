@@ -113,21 +113,21 @@ export const pageQuery = graphql`
     productOne: file(relativePath: { eq: "white.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 300, maxHeight: 330, quality: 95) {
-          ...GatsbyImageSharpFluid_tracedSVG
+          ...GatsbyImageSharpFluid
         }
       }
     }
     productTwo: file(relativePath: { eq: "black.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 300, maxHeight: 330, quality: 95) {
-          ...GatsbyImageSharpFluid_tracedSVG
+          ...GatsbyImageSharpFluid
         }
       }
     }
     hiddenimage: file(relativePath: { eq: "hiddenFooter.png" }) {
       childImageSharp {
         fluid(maxWidth: 3180, maxHeight: 1179, quality: 95) {
-          ...GatsbyImageSharpFluid_tracedSVG
+          ...GatsbyImageSharpFluid
         }
       }
     }
