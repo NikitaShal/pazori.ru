@@ -24,7 +24,7 @@ const IndexPage = props => (
 
 	    {/* <Img fluid={props.data.imageOne.childImageSharp.fluid} /> */}
 
-
+  {/*
 			<ThemeToggler>
         {({ theme, toggleTheme }) => (
           <label>
@@ -37,7 +37,7 @@ const IndexPage = props => (
           </label>
         )}
       </ThemeToggler>
-
+*/}
       <div className="kostyl">
 
 	    <div className="header">
@@ -65,10 +65,10 @@ const IndexPage = props => (
 			</div>
 
 			<div className="about-company-text">
-				Мы - самое северное швейное производство. 
-				Следим за качеством и даём гарантию на всю продукцию.
-				Исполнили уже более 50 заказов для компаний по Мурманску и области. 
-				Можем с нуля разработать мерч(брендированная одежда компании) с индивидуальным дизайном. 
+				Мы - самое северное швейное производство <br/><br/>
+				Следим за качеством и даём гарантию на всю продукцию <br/><br/>
+				Исполнили уже более 50 заказов для компаний по Мурманску и области <br/><br/>
+				Можем с нуля разработать мерч(брендированная одежда компании) с индивидуальным дизайном <br/><br/>
 			</div>
 
 			<div className="social-buttons">
