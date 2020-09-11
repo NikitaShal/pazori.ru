@@ -1,3 +1,7 @@
+.container {
+  opacity: 0;
+}
+
 .header {
   margin-right: 25px;
   margin-top: 40px;
