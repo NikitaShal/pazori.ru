@@ -50,7 +50,7 @@ body {
   --allcatalog_buttonBGCC: linear-gradient(0deg, rgba(0,192,255,1) 0%, rgba(172,0,255,1) 100%);
   --allcatalog_button_: white;
   --allcatalog_button__: white;
-  --call_button_outline: #9BFF23;
+  --call_button_outline: #9BFFA3;
 }
 img {
   border-style: none;
