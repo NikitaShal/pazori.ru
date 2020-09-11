@@ -5,7 +5,7 @@ import Img from 'gatsby-image';
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-import { ThemeToggler } from 'gatsby-plugin-dark-mode'
+// import { ThemeToggler } from 'gatsby-plugin-dark-mode'
 
 import "../css/multilink.css"
 

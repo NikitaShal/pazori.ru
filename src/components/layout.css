@@ -32,7 +32,7 @@ body.dark {
   --shadowcolor: 25px 25px 71px -34px rgba(18,18,18,0.37);
   --textNormal: rgba(255, 255, 255, 0.95);
   --footerGradientBGC: rgb(76,93,255);
-  --footerGradientBGCC: linear-gradient(161deg, rgba(76,93,255,1) 0%, rgba(180,13,249,1) 100%);
+  --footerGradientBGCC: linear-gradient(161deg, rgba(43,55,163,1) 0%, rgba(121,40,154,1) 100%);
   --allcatalog_buttonBGC: rgb(0,182,255);
   --allcatalog_buttonBGCC: linear-gradient(190deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 100%);
   --allcatalog_button_: rgb(0,182,255);
