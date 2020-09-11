@@ -12,7 +12,7 @@
 .brand-line {
   position: relative;
   height: 4px;
-  margin-top: -9.5px;
+  margin-top: -11px;
   margin-left: 23px;
   background: rgb(126,255,177);
   background: linear-gradient(90deg, rgba(126,255,177,1) 0%, rgba(126,237,255,1) 25%, rgba(167,127,255,1) 75%, rgba(255,126,249,1) 100%);
@@ -23,7 +23,7 @@
 .brand-description {
   float: right;
   position: relative;
-  margin-top: -63px;
+  margin-top: -64px;
   font-family: "GillSans", sans-serif;
   font-size: 1em;
   line-height: normal;
@@ -117,7 +117,7 @@
   width: 85%;
   text-align: center;
   display: block;
-  margin: 45px auto 0px auto;
+  margin: 60px auto 0px auto;
   position: relative;
   font-family: "GillSans", sans-serif;
   font-weight: 100;
@@ -130,7 +130,8 @@
   z-index: 1;
   margin: 45px auto 0 auto;
   box-shadow: var(--shadowcolor);
-  background-color: var(--bgSocialCard);
+  background: var(--bgSocialCard);
+  background: var(--bgSocialCardGradient);
   width: 85%;
   padding-bottom: 18px;
   border-radius: 30px;
