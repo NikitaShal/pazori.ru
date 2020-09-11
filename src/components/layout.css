@@ -5,6 +5,7 @@ html {
   font-family: "GillSans", sans-serif;
   box-sizing: border-box;
   overflow-y: scroll;
+  background-color: var(--bg);
 }
 body {
   max-width: 500px;
@@ -21,7 +22,7 @@ body {
   font-feature-settings: "kern", "liga", "clig", "calt";
   padding-bottom: 200px;
   background-color: var(--bg);
-  z-index: 0;
+  z-index: 1;
 }
 body.dark {
   -webkit-font-smoothing: antialiased;
@@ -29,6 +30,7 @@ body.dark {
   --bgSocialCard: rgb(10,10,0);
   --bgSocialCardGradient: linear-gradient(0deg, rgba(10,10,0,1) 0%, rgba(29,30,66,1) 100%);
   --invertLogo: invert(1);
+  --inverthiddenFooter: invert(0);
   --shadowcolor: 25px 25px 71px -34px rgba(18,18,18,0.37);
   --textNormal: rgba(255, 255, 255, 0.95);
   --footerGradientBGC: rgb(76,93,255);
@@ -45,6 +47,7 @@ body {
   --bgSocialCard: #fff;
   --bgSocialCardGradient: #fff;
   --invertLogo: invert(0);
+  --inverthiddenFooter: invert(1);
   --shadowcolor: 25px 25px 71px -34px rgba(18,18,18,0.37);
   --footerGradientBGC: rgb(121,255,214);
   --footerGradientBGCC: linear-gradient(141deg, rgba(121,255,214,1) 0%, rgba(112,207,255,1) 49%, rgba(168,142,242,1) 100%);

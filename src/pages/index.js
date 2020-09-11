@@ -92,14 +92,14 @@ const IndexPage = props => (
 					<div className="madeinrussia">
 						<img src={mir} alt="Made in Russia"/>
 					</div>
-			</div>
-
-			</div>
-
-			<div className="footerimg">
+								<div className="footerimg">
 				<Img fluid={props.data.hiddenimage.childImageSharp.fluid} alt="Северное  сияние 
 (устар. «па́зори») — свечение (люминесценция) верхних слоёв атмосфер планет, обладающих магнитосферой, вследствие их взаимодействия с заряженными частицами солнечного ветра."/>
 			</div>
+			</div>
+
+			</div>
+
     </div>
   </Layout>
 )
@@ -122,7 +122,7 @@ export const pageQuery = graphql`
         }
       }
     }
-    hiddenimage: file(relativePath: { eq: "hiddenFooterWhite.png" }) {
+    hiddenimage: file(relativePath: { eq: "hiddenFooter.png" }) {
       childImageSharp {
         fluid(maxWidth: 3180, maxHeight: 1179, quality: 95) {
           ...GatsbyImageSharpFluid_tracedSVG

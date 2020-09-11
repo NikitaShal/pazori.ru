@@ -206,7 +206,8 @@
   position: fixed;
   width: 100%;
   max-width: 500px;
-  bottom: 0;
+  bottom: 25px;
+  filter: var(--inverthiddenFooter);
 }
 
 /*@media only screen and (min-width: 480px) {
