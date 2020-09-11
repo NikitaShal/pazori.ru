@@ -47,6 +47,16 @@ module.exports = {
     },
   },
   'gatsby-plugin-dark-mode',
+  { 
+    resolve: `gatsby-plugin-purgecss`,
+    options: {
+      printRejected: false, // Print removed selectors and processed file names
+       develop: false, // Enable while using `gatsby develop`
+      // whitelist: ['whitelist'], // Don't remove this selector
+      // ignore: ['/ignored.css', 'prismjs/', 'docsearch.js/'], // Ignore files/folders
+      // purgeOnly : ['components/', '/main.css', 'bootstrap/'], // Purge only these files/folders
+    }
+  }
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

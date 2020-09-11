@@ -1,7 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
-
-import { ThemeToggler } from 'gatsby-plugin-dark-mode'
 
 import Img from 'gatsby-image';
 
@@ -19,7 +16,7 @@ import mir from '../images/madeinrussia.svg'
 
 const IndexPage = props => (
   <Layout>
-	<div class="container">
+	<div className="container">
 
 	    <SEO title="Привет" />
 
@@ -39,66 +36,67 @@ const IndexPage = props => (
         )}
       </ThemeToggler>
 */}
-      <div class="kostyl">
+      <div className="kostyl">
 
-	    <div class="header">
+	    <div className="header">
 	    	<div  style={{ maxWidth: `160px` }}>
-		      <img class="logo" src={logo} />
+		      <img className="logo" src={logo} alt="логотип pazori" />
 		    </div>
-		    <p class="brand-description">одежда и <br/> 
+		    <p className="brand-description">одежда и <br/> 
 		    аксессуары из <br/> Мурманска</p>
-		    <div class="brand-line"></div>
+		    <div className="brand-line"></div>
 			</div>
 
-			<div class="catalog">
-				<div class="grid">
+			<div className="catalog">
+				<div className="grid">
 
-						<div class="item">
+						<div className="item">
 							<Img fluid={props.data.productOne.childImageSharp.fluid} />
 						</div>
-						<div class="item">
-							<Img class="" fluid={props.data.productTwo.childImageSharp.fluid} />
+						<div className="item">
+							<Img className="" fluid={props.data.productTwo.childImageSharp.fluid} />
 						</div>
 
 				</div>
 
-				<a href="https://vk.com/market-196667887" target="_blank"><button class="allcatalog_button"></button></a>
+				<a href="https://vk.com/market-196667887" target="_blank" rel="noreferrer"><button className="allcatalog_button"> </button></a>
 			</div>
 
-			<div class="about-company-text">
+			<div className="about-company-text">
 				Мы - самое северное швейное производство. 
 				Следим за качеством и даём гарантию на всю продукцию.
 				Исполнили уже более 50 заказов для компаний по Мурманску и области. 
 				Можем с нуля разработать мерч(брендированная одежда компании) с индивидуальным дизайном. 
 			</div>
 
-			<div class="social-buttons">
+			<div className="social-buttons">
 				<p>Для лайков/сотрудничества/хейта:</p>
-				<div class="grid" style={{ width: `80%`, margin: `18px auto 0px auto` }}>
-					<div class="item" style={{ maxWidth: `40px` }}><a href="https://vk.com/pazori_north" target="_blank"><img src={vk} /></a></div>
-					<div class="item" style={{ maxWidth: `40px` }}><a href="https://www.instagram.com/pazori_north/" target="_blank"><img src={inst} /></a></div>
-					<div class="item" style={{ maxWidth: `40px` }}><a href="https://wa.me/79113458640" target="_blank"><img src={wa} /></a></div>
-					<div class="item" style={{ maxWidth: `40px` }}><a href="https://t.me/nikitashal" target="_blank"><img src={tg} /></a></div>
+				<div className="grid" style={{ width: `80%`, margin: `18px auto 0px auto` }}>
+					<div className="item" style={{ maxWidth: `40px` }}><a href="https://vk.com/pazori_north" target="_blank" rel="noreferrer"><img src={vk} alt="ссылка на страницу vk"/></a></div>
+					<div className="item" style={{ maxWidth: `40px` }}><a href="https://www.instagram.com/pazori_north/" target="_blank" rel="noreferrer"><img src={inst} alt="ссылка на страницу instagram"/></a></div>
+					<div className="item" style={{ maxWidth: `40px` }}><a href="https://wa.me/79113458640" target="_blank" rel="noreferrer"><img src={wa} alt="ссылка на чат whatsapp"/></a></div>
+					<div className="item" style={{ maxWidth: `40px` }}><a href="https://t.me/nikitashal" target="_blank" rel="noreferrer"><img src={tg} alt="ссылка на чат telegram"/></a></div>
 				</div>
 			</div>
 
 
-			<div class="footer">
-					<a href="tel:89113458640"><button class="call_button">ЗВОНОК</button></a>
-					<a href = "mailto: info@pazori.ru"><button class="mail_button">ПОЧТА</button></a>
+			<div className="footer">
+					<a href="tel:89113458640"><button className="call_button">ЗВОНОК</button></a>
+					<a href = "mailto: info@pazori.ru"><button className="mail_button">ПОЧТА</button></a>
 
-					{/*<button class="merchbutton">МЕРЧ</button>
-					<button class="optombutton">ОПТОМ</button>*/}
+					{/*<button className="merchbutton">МЕРЧ</button>
+					<button className="optombutton">ОПТОМ</button>*/}
 
-					<div class="madeinrussia">
-						<img src={mir} />
+					<div className="madeinrussia">
+						<img src={mir} alt="Made in Russia"/>
 					</div>
 			</div>
 
 			</div>
 
-			<div class="footerimg">
-				<Img fluid={props.data.hiddenimage.childImageSharp.fluid} />
+			<div className="footerimg">
+				<Img fluid={props.data.hiddenimage.childImageSharp.fluid} alt="Северное  сияние 
+(устар. «па́зори») — свечение (люминесценция) верхних слоёв атмосфер планет, обладающих магнитосферой, вследствие их взаимодействия с заряженными частицами солнечного ветра."/>
 			</div>
     </div>
   </Layout>
