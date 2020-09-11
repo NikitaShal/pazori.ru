@@ -122,9 +122,9 @@ export const pageQuery = graphql`
         }
       }
     }
-    hiddenimage: file(relativePath: { eq: "vkHeader.png" }) {
+    hiddenimage: file(relativePath: { eq: "hiddenFooterWhite.png" }) {
       childImageSharp {
-        fluid(maxWidth: 673, maxHeight: 253, quality: 95) {
+        fluid(maxWidth: 3180, maxHeight: 806, quality: 95) {
           ...GatsbyImageSharpFluid_tracedSVG
         }
       }
