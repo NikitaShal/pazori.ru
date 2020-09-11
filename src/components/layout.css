@@ -28,7 +28,7 @@ body.dark {
   --bg: #242431;
   --bgSocialCard: #201F4a;
   --invertLogo: invert(1);
-  --shadowcolor: 0 2px 25px rgba(255,255, 255, 0.40);
+  --shadowcolor: 25px 25px 71px -34px rgba(18,18,18,0.37);
   --textNormal: rgba(255, 255, 255, 0.95);
   --footerGradientBGC: rgb(31,35,73);
   --footerGradientBGCC: linear-gradient(23deg, rgba(31,35,73,1) 0%, rgba(78,0,180,1) 100%);
@@ -36,18 +36,21 @@ body.dark {
   --allcatalog_buttonBGCC: linear-gradient(190deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 100%);
   --allcatalog_button_: rgb(0,182,255);
   --allcatalog_button__: linear-gradient(190deg, rgba(0,182,255,1) 0%, rgba(30,77,216,1) 100%);
+  --call_button_outline: #00E0A5;
+  --allcatalog_button_glow: 0px 20px 105px 1px rgba(25,85,255,0.1);
 }
 body {
   --bg: #fff;
   --bgSocialCard: #fff;
   --invertLogo: invert(0);
-  --shadowcolor: 0 2px 25px rgba(0,0, 0, 0.35);
+  --shadowcolor: 25px 25px 71px -34px rgba(18,18,18,0.37);
   --footerGradientBGC: rgb(121,255,214);
   --footerGradientBGCC: linear-gradient(141deg, rgba(121,255,214,1) 0%, rgba(112,207,255,1) 49%, rgba(168,142,242,1) 100%);
   --allcatalog_buttonBGC: rgb(0,192,255);
   --allcatalog_buttonBGCC: linear-gradient(0deg, rgba(0,192,255,1) 0%, rgba(172,0,255,1) 100%);
   --allcatalog_button_: white;
   --allcatalog_button__: white;
+  --call_button_outline: #9BFF23;
 }
 img {
   border-style: none;

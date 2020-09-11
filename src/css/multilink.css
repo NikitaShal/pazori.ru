@@ -37,8 +37,6 @@
   padding-top: 110px;
   z-index: 0;
   padding-bottom: 50px;
-/*  background: rgb(121,255,214);
-  background: linear-gradient(141deg, rgba(121,255,214,1) 0%, rgba(112,207,255,1) 49%, rgba(168,142,242,1) 100%);*/
   background: var(--footerGradientBGC);
   background: var(--footerGradientBGCC);
   -webkit-box-shadow: 0 4px 6px -6px black;
@@ -97,6 +95,7 @@
   -webkit-background-clip: text;
   text-fill-color: transparent;
   -webkit-text-fill-color: transparent;
+  box-shadow: var(--allcatalog_button_glow);
 }
 
 .grid {
@@ -161,7 +160,7 @@
   display: block;
   margin: 0px auto 0px auto;
   border: none;
-  border: solid 3px white;
+  border: solid 3px var(--call_button_outline);
   background: rgba(255, 255, 255,0);
   color: white;
 }
