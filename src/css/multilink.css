@@ -37,8 +37,10 @@
   padding-top: 110px;
   z-index: 0;
   padding-bottom: 50px;
-  background: rgb(121,255,214);
-  background: linear-gradient(141deg, rgba(121,255,214,1) 0%, rgba(112,207,255,1) 49%, rgba(168,142,242,1) 100%);
+/*  background: rgb(121,255,214);
+  background: linear-gradient(141deg, rgba(121,255,214,1) 0%, rgba(112,207,255,1) 49%, rgba(168,142,242,1) 100%);*/
+  background: var(--footerGradientBGC);
+  background: var(--footerGradientBGCC);
   -webkit-box-shadow: 0 4px 6px -6px black;
      -moz-box-shadow: 0 4px 6px -6px black;
           box-shadow: 0 4px 6px -6px black;
@@ -70,7 +72,8 @@
   padding: 10px;
   -webkit-appearance: none;
   appearance: none;
-  background-color: white;
+  background: var(--allcatalog_button_);
+  background: var(--allcatalog_button__);
   border-radius: 7px;
   cursor: pointer;
   position: relative;
@@ -80,14 +83,15 @@
   display: block;
   margin: 20px auto 0px auto;
   border: none;
+  color: white;
 }
 
 
 /* Uncomment the flexbox declarations to see the gradient text break */
 .allcatalog_button::after {
   content: "Перейти в каталог";
-  background: rgb(0,192,255);
-  background: linear-gradient(0deg, rgba(0,192,255,1) 0%, rgba(172,0,255,1) 100%);
+  background: var(--allcatalog_buttonBGC);
+  background: var(--allcatalog_buttonBGCC);
   font-size: 1em;
   background-clip: text;
   -webkit-background-clip: text;
@@ -126,7 +130,7 @@
   z-index: 1;
   margin: 45px auto 0 auto;
   box-shadow: var(--shadowcolor);
-  background-color: var(--bg);
+  background-color: var(--bgSocialCard);
   width: 85%;
   padding-bottom: 18px;
   border-radius: 30px;

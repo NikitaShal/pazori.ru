@@ -5,6 +5,8 @@ import Img from 'gatsby-image';
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
+import { ThemeToggler } from 'gatsby-plugin-dark-mode'
+
 import "../css/multilink.css"
 
 import logo from '../images/logo-pazori.svg'
@@ -22,7 +24,7 @@ const IndexPage = props => (
 
 	    {/* <Img fluid={props.data.imageOne.childImageSharp.fluid} /> */}
 
-{/*
+
 			<ThemeToggler>
         {({ theme, toggleTheme }) => (
           <label>
@@ -35,7 +37,7 @@ const IndexPage = props => (
           </label>
         )}
       </ThemeToggler>
-*/}
+
       <div className="kostyl">
 
 	    <div className="header">
