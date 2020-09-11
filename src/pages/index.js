@@ -20,7 +20,7 @@ const IndexPage = props => (
   <Layout>
 	<div className="container">
 
-	    <SEO title="Привет" />
+	    <SEO title="Одежда и аксессуары из Мурманска" />
 
 	    {/* <Img fluid={props.data.imageOne.childImageSharp.fluid} /> */}
 
