@@ -9,6 +9,7 @@ html {
 body {
   --bg: #fff;
   --invertLogo: invert(0);
+  --shadowcolor: 0 2px 25px rgba(0,0, 0, 0.35);
 
   max-width: 500px;
   margin: 0 auto;
@@ -30,6 +31,7 @@ body.dark {
   -webkit-font-smoothing: antialiased;
   --bg: black;
   --invertLogo: invert(1);
+  --shadowcolor: 0 2px 25px rgba(255,255, 255, 0.40);
   --textNormal: rgba(255, 255, 255, 0.95);
   --textTitle: white;
   --textLink: yellow;
