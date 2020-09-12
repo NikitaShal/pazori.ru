@@ -2,7 +2,7 @@ import React from "react"
 
 import Img from 'gatsby-image';
 
-import { motion } from "framer-motion"
+// import { motion } from "framer-motion"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -20,7 +20,7 @@ import mir from '../images/madeinrussia.svg'
 
 const IndexPage = props => (
   <Layout>
-	<motion.div className="container" animate={{ opacity: 1 }} transition={{ ease: "easeOut", duration: 0.7 }}>
+	<div className="container">
 
 	    <SEO title="Одежда и аксессуары из Мурманска" />
 
@@ -102,7 +102,7 @@ const IndexPage = props => (
 
 			</div>
 
-    </motion.div>
+    </div>
   </Layout>
 )
 
