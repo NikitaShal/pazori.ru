@@ -2,7 +2,7 @@ import React from "react"
 
 import Img from 'gatsby-image';
 
-// import { motion } from "framer-motion"
+ import { motion } from "framer-motion"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
