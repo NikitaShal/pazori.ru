@@ -2,11 +2,9 @@ import React from "react"
 
 import Img from 'gatsby-image';
 
-import { motion, useCycle } from "framer-motion"
-
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Card from "../components/card";
+import Card from "../components/Card";
 
 // import { ThemeToggler } from 'gatsby-plugin-dark-mode'
 
@@ -24,18 +22,7 @@ import husen from "../images/DSC02380.jpg";
 import houston from "../images/IMG_5251.jpg";
 import dimitar from "../images/DSC01485-2.jpg";
 
-const IndexPage = (props) => {
-  const [animate, toggleFocus] = useCycle(
-    {
-      container: { height: "25rem", top: "0rem", overflowX: "auto" },
-      title: { opacity: 1 }
-    },
-    {
-      container: { height: "100%", top: "-4.4rem", overflowX: "hidden" },
-      title: { opacity: 0 }
-    }
-  );
-	return(
+const IndexPage = props => (
   <Layout>
 	<div className="container">
 
@@ -70,23 +57,21 @@ const IndexPage = (props) => {
 
 			<div className="catalog">
 
-      <motion.div
+      <div
         className="card-container"
-        animate={animate.container}
         initial={{ top: "0rem" }}
         transition={{ ease: "easeOut", delay: 0.1 }}
       >
-        <Card title="Sereja Ris" image={sereja} onToggleFocus={toggleFocus} />
-        <Card title="Husen Siraaj" image={husen} onToggleFocus={toggleFocus} />
-        <Card title="Houston Ray" image={houston} onToggleFocus={toggleFocus} />
+        <Card title="Sereja Ris" image={sereja}/>
+        <Card title="Husen Siraaj" image={husen} />
+        <Card title="Houston Ray" image={houston}  />
         <Card
           title="Dimitar Donovski"
           image={dimitar}
-          onToggleFocus={toggleFocus}
         />
-      </motion.div>
-
-				<div className="grid">
+      </div>
+				  {/*
+<div className="grid">
 
 						<div className="item">
 							<Img fluid={props.data.productOne.childImageSharp.fluid} />
@@ -96,7 +81,7 @@ const IndexPage = (props) => {
 						</div>
 
 				</div>
-
+*/}
 			</div>
 
 			<a href="https://vk.com/market-196667887" target="_blank" rel="noreferrer"><button className="allcatalog_button"> </button></a>
@@ -140,7 +125,6 @@ const IndexPage = (props) => {
     </div>
   </Layout>
 )
-}
 
 export default IndexPage
 

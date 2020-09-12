@@ -226,8 +226,7 @@
 }
 
 .card .card-image-wrapper {
-  border-top-left-radius: 0.5rem;
-  border-top-right-radius: 0.5rem;
+  border-radius: 0.5rem;
 }
 
 .title {
@@ -283,7 +282,7 @@
 
 .card-image {
   width: 100%;
-  height: auto;
+  height: 400px;
 }
 
 .card-image-wrapper {
