@@ -252,6 +252,7 @@
   padding: 1rem;
   width: 90%;
   min-width: 90%;
+  height: 120% !important;
   box-sizing: border-box;
 }
 

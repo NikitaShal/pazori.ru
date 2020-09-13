@@ -17,10 +17,6 @@ import wa from '../images/whatsapp.svg'
 import tg from '../images/telegram.svg'
 import mir from '../images/madeinrussia.svg'
 
-import sereja from "../images/DSC02425.jpg";
-import houston from "../images/IMG_5251.jpg";
-import dimitar from "../images/DSC01485-2.jpg";
-
 const IndexPage = props => (
   <Layout>
 	<div className="container">
@@ -59,8 +55,8 @@ const IndexPage = props => (
       <div className="card-container">
         <Card image={props.data.pic1.childImageSharp.fluid} />
         <Card image={props.data.pic2.childImageSharp.fluid}  />
-        <Card image={props.data.picInstQr.childImageSharp.fluid} />
-        <Card image={props.data.pic3.childImageSharp.fluid}
+        <Card image={props.data.pic3.childImageSharp.fluid} />
+        <Card image={props.data.pic4.childImageSharp.fluid}
         />
       </div>
   {/*
@@ -137,30 +133,30 @@ export const pageQuery = graphql`
         }
       }
     }
-    pic1: file(relativePath: { eq: "DSC01485-2.jpg" }) {
+    pic1: file(relativePath: { eq: "IMG_1986.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 200, maxHeight: 200, quality: 85) {
+        fluid(maxWidth: 400, maxHeight: 500, quality: 85) {
           ...GatsbyImageSharpFluid_tracedSVG
         }
       }
     }
-    pic2: file(relativePath: { eq: "IMG_5251.jpg" }) {
+    pic2: file(relativePath: { eq: "IMG_5459.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 200, maxHeight: 200, quality: 85) {
+        fluid(maxWidth: 400, maxHeight: 500, quality: 85) {
           ...GatsbyImageSharpFluid_tracedSVG
         }
       }
     }
-    pic3: file(relativePath: { eq: "DSC02425.jpg" }) {
+    pic3: file(relativePath: { eq: "IMG_5251.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 200, maxHeight: 200, quality: 85) {
+        fluid(maxWidth: 400, maxHeight: 500, quality: 85) {
           ...GatsbyImageSharpFluid_tracedSVG
         }
       }
     }
-    picInstQr: file(relativePath: { eq: "IMG_04044F26E940-1.jpeg" }) {
+    pic4: file(relativePath: { eq: "DSC01485-2.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 200, maxHeight: 200, quality: 85) {
+        fluid(maxWidth: 400, maxHeight: 500, quality: 85) {
           ...GatsbyImageSharpFluid_tracedSVG
         }
       }
