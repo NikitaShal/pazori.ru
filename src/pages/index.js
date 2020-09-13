@@ -139,28 +139,28 @@ export const pageQuery = graphql`
     }
     pic1: file(relativePath: { eq: "DSC01485-2.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 300, maxHeight: 330, quality: 95) {
+        fluid(maxWidth: 200, maxHeight: 200, quality: 75) {
           ...GatsbyImageSharpFluid
         }
       }
     }
     pic2: file(relativePath: { eq: "IMG_5251.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 300, maxHeight: 330, quality: 95) {
+        fluid(maxWidth: 200, maxHeight: 200, quality: 75) {
           ...GatsbyImageSharpFluid
         }
       }
     }
     pic3: file(relativePath: { eq: "DSC02425.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 300, maxHeight: 330, quality: 95) {
+        fluid(maxWidth: 200, maxHeight: 200, quality: 75) {
           ...GatsbyImageSharpFluid
         }
       }
     }
     picInstQr: file(relativePath: { eq: "IMG_04044F26E940-1.jpeg" }) {
       childImageSharp {
-        fluid(maxWidth: 300, maxHeight: 330, quality: 95) {
+        fluid(maxWidth: 200, maxHeight: 200, quality: 75) {
           ...GatsbyImageSharpFluid
         }
       }
