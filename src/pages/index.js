@@ -6,7 +6,7 @@ import { motion, useCycle } from "framer-motion"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Card from "../components/Card";
+import Card from "../components/card";
 
 // import { ThemeToggler } from 'gatsby-plugin-dark-mode'
 
