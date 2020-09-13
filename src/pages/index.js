@@ -2,8 +2,6 @@ import React from "react"
 
 import Img from 'gatsby-image';
 
-import { motion, useCycle } from "framer-motion"
-
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Card from "../components/card";
@@ -20,22 +18,10 @@ import tg from '../images/telegram.svg'
 import mir from '../images/madeinrussia.svg'
 
 import sereja from "../images/DSC02425.jpg";
-import husen from "../images/DSC02380.jpg";
 import houston from "../images/IMG_5251.jpg";
 import dimitar from "../images/DSC01485-2.jpg";
 
-const IndexPage = props => {
-	  const [animate, toggleFocus] = useCycle(
-    {
-      container: { height: "25rem", top: "0rem", overflowX: "auto" },
-      title: { opacity: 1 }
-    },
-    {
-      container: { height: "100%", top: "-4.4rem", overflowX: "hidden" },
-      title: { opacity: 0 }
-    }
-  );
-	  return (
+const IndexPage = props => (
   <Layout>
 	<div className="container">
 
@@ -59,33 +45,24 @@ const IndexPage = props => {
 */}
       <div className="kostyl">
 
-	    <motion.div className="header title"        animate={animate.title}
-        transition={{ ease: "easeInOut", duration: 0.2 }}>
+	    <div className="header">
 	    	<div  style={{ maxWidth: `160px` }}>
 		      <img className="logo" src={logo} alt="логотип pazori" />
 		    </div>
 		    <p className="brand-description">одежда и <br/> 
 		    аксессуары из <br/> Мурманска</p>
-		    <div className="brand-line"></div>
-			</motion.div>
+		    <div className="brand-line" />
+			</div>
 
 			<div className="catalog">
 
-      <motion.div
-        className="card-container"
-        animate={animate.container}
-        initial={{ top: "0rem" }}
-        transition={{ ease: "easeOut", delay: 0.1 }}
-      >
-        <Card title="Куртка дождевик" image={houston} onToggleFocus={toggleFocus} />
-        <Card title="Husen Siraaj" image={houston} onToggleFocus={toggleFocus} />
-        <Card title="Houston Ray" image={houston} onToggleFocus={toggleFocus} />
-        <Card
-          title="Dimitar Donovski"
-          image={houston}
-          onToggleFocus={toggleFocus}
+      <div className="card-container">
+        <Card image={props.data.pic1.childImageSharp.fluid} />
+        <Card image={props.data.pic2.childImageSharp.fluid}  />
+        <Card image={props.data.picInstQr.childImageSharp.fluid} />
+        <Card image={props.data.pic3.childImageSharp.fluid}
         />
-      </motion.div>
+      </div>
   {/*
 				<div className="grid">
 
@@ -140,7 +117,7 @@ const IndexPage = props => {
 
     </div>
   </Layout>
-)}
+)
 
 export default IndexPage
 
@@ -154,6 +131,34 @@ export const pageQuery = graphql`
       }
     }
     productTwo: file(relativePath: { eq: "black.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 300, maxHeight: 330, quality: 95) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    pic1: file(relativePath: { eq: "DSC01485-2.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 300, maxHeight: 330, quality: 95) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    pic2: file(relativePath: { eq: "IMG_5251.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 300, maxHeight: 330, quality: 95) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    pic3: file(relativePath: { eq: "DSC02425.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 300, maxHeight: 330, quality: 95) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    picInstQr: file(relativePath: { eq: "IMG_04044F26E940-1.jpeg" }) {
       childImageSharp {
         fluid(maxWidth: 300, maxHeight: 330, quality: 95) {
           ...GatsbyImageSharpFluid

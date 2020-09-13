@@ -3,7 +3,6 @@
 }
 
 .header {
-  margin-right: 25px;
   margin-top: 40px;
   margin-left: 25px;
   margin-right: 23px;
@@ -226,8 +225,7 @@
 }
 
 .card .card-image-wrapper {
-  border-top-left-radius: 0.5rem;
-  border-top-right-radius: 0.5rem;
+  border-radius: 0.5rem;
 }
 
 .title {
@@ -245,12 +243,13 @@
   min-width: calc(100% - 2rem);
   position: relative;
   scrollbar-width: none;
+  behavior: 'smooth'
 }
 
 .card-wrapper {
   padding: 1rem;
-  width: 100%;
-  min-width: 100%;
+  width: 90%;
+  min-width: 90%;
   box-sizing: border-box;
 }
 
