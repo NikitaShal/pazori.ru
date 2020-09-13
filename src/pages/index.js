@@ -139,29 +139,29 @@ export const pageQuery = graphql`
     }
     pic1: file(relativePath: { eq: "DSC01485-2.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 200, maxHeight: 200, quality: 75) {
-          ...GatsbyImageSharpFluid
+        fluid(maxWidth: 200, maxHeight: 200, quality: 85) {
+          ...GatsbyImageSharpFluid_tracedSVG
         }
       }
     }
     pic2: file(relativePath: { eq: "IMG_5251.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 200, maxHeight: 200, quality: 75) {
-          ...GatsbyImageSharpFluid
+        fluid(maxWidth: 200, maxHeight: 200, quality: 85) {
+          ...GatsbyImageSharpFluid_tracedSVG
         }
       }
     }
     pic3: file(relativePath: { eq: "DSC02425.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 200, maxHeight: 200, quality: 75) {
-          ...GatsbyImageSharpFluid
+        fluid(maxWidth: 200, maxHeight: 200, quality: 85) {
+          ...GatsbyImageSharpFluid_tracedSVG
         }
       }
     }
     picInstQr: file(relativePath: { eq: "IMG_04044F26E940-1.jpeg" }) {
       childImageSharp {
-        fluid(maxWidth: 200, maxHeight: 200, quality: 75) {
-          ...GatsbyImageSharpFluid
+        fluid(maxWidth: 200, maxHeight: 200, quality: 85) {
+          ...GatsbyImageSharpFluid_tracedSVG
         }
       }
     }

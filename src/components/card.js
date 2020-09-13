@@ -12,6 +12,8 @@ export default function Card({ title, image }) {
               className="card-image"
               fluid={image}
               alt=""
+              loading="eager"
+              fadeIn="true"
             />
           </div>
         </figure>
