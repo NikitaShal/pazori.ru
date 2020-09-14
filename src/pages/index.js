@@ -4,7 +4,7 @@ import Img from 'gatsby-image';
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Card from "../components/card";
+import Card from "../components/card"
 
 // import { ThemeToggler } from 'gatsby-plugin-dark-mode'
 
@@ -76,9 +76,9 @@ const IndexPage = props => (
 			<a href="https://vk.com/market-196667887" target="_blank" rel="noreferrer"><button className="allcatalog_button"> </button></a>
 
 			<div className="about-company-text">
-				Пáзори - российский бренд из Мурманска <br/><br/>
-				Практичность и стиль, проверенные на крайнем севере<br/><br/>
-				Поможем с нуля разработать мерч (брендированная одежда компании) с индивидуальным дизайном <br/><br/>
+				Пáзори - российский бренд одежды и аксессуаров <br/><br/>
+				Практичность и стиль, проверенные на крайнем севере <br/><br/>
+				Также можем с нуля разработать мерч (брендированная одежда компании) с индивидуальным дизайном <br/><br/>
 			</div>
 
 			<div className="social-buttons">
@@ -139,21 +139,21 @@ export const pageQuery = graphql`
         }
       }
     }
-    pic2: file(relativePath: { eq: "IMG_5459.jpg" }) {
+    pic2: file(relativePath: { eq: "IMG_2069.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 400, maxHeight: 500, quality: 85) {
           ...GatsbyImageSharpFluid_tracedSVG
         }
       }
     }
-    pic3: file(relativePath: { eq: "IMG_5251.jpg" }) {
+    pic3: file(relativePath: { eq: "IMG_1858.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 400, maxHeight: 500, quality: 85) {
           ...GatsbyImageSharpFluid_tracedSVG
         }
       }
     }
-    pic4: file(relativePath: { eq: "DSC01485-2.jpg" }) {
+    pic4: file(relativePath: { eq: "IMG_5330.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 400, maxHeight: 500, quality: 85) {
           ...GatsbyImageSharpFluid_tracedSVG
